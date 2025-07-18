@@ -1,0 +1,18 @@
+{
+  "auth": {
+    "login": "Log In",
+    "logout": "Log Out",
+    "signup": "Sign up",
+    "registration": "Registration",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "dontHaveAccount": "Don't have an account?",
+    "doYouHaveAccount": "Do you have an account?",
+    "or": "Or",
+    "loginWithGoogle": "Log in with google account",
+    
+    "welcomeLine1": "Welcome to",
+    "welcomeLine2": "Grafik Master"
+  }
+}

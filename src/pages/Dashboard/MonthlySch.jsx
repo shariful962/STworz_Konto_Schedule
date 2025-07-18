@@ -2,15 +2,18 @@ import React, { use, useState } from "react";
 import { ChevronDown, Calendar } from "lucide-react";
 import WebIcons from "../../assets/images";
 import Dashboard from "./Dashboard";
+import { useTranslation } from "react-i18next";
 // Mock WebIcons for demonstration
 
 const MonthlySch = () => {
+
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenT, setIsOpenT] = useState(false);
   const [selectedYear, setSelectedYear] = useState("2025");
   const [showDashboard, setShowDashboard] = useState(false);
   const [selectedMonth, setSelectedMonth] = useState(null);
-  const [language, setLanguage] = useState("English");
+  const [language, setLanguage] = useState(i18n.language === "pl" ? "Polish" : "English");
 
   const years = [
     
@@ -44,12 +47,17 @@ const MonthlySch = () => {
     setSelectedYear(year);
     setIsOpen(false);
   };
+  const changeLanguage = (ln)=>{
+    const langCode = ln === "English" ? "en" : "pl";
+    i18n.changeLanguage(langCode);
+    setLanguage(ln);
+  }
 
   if (!showDashboard) {
     return (
       <div className="w-full flex flex-col gap-10 my-2 capitalize px-5">
         <h2 className="mt-7 md:mt-0 text-2xl md:text-[2rem] font-semibold font-Roboto text-textClr">
-          Welcome to <br className="hidden md:block" /> Grafik Master
+          {t("auth.welcomeLine1")} <br className="hidden md:block" /> Grafik Master
         </h2>
 
         <div className="flex flex-col md:flex-row gap-5 justify-between md:items-center">
@@ -87,10 +95,10 @@ const MonthlySch = () => {
                         key={index}
                         onClick={() => {
                           setIsOpenT(false);
-                          setLanguage(ln);
+                          changeLanguage(ln);
                         }}
                         className={`flex items-center gap-2 w-full px-4 py-2 text-left hover:bg-gray-100 transition-colors duration-150 ${
-                          language === "en" ? "text-blue-600" : "text-gray-600"
+                          language === ln ? "text-blue-600" : "text-gray-600"
                         }`}
                       >
                         {ln}

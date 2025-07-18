@@ -1,0 +1,19 @@
+{
+  "auth": {
+    "login": "Zaloguj się",
+    "logout": "Wyloguj się",
+    "signup": "Zapisać się",
+    "registration": "Rejestracja",
+    "email": "E-mail",
+    "password": "Hasło",
+    "confirmPassword": "Potwierdź hasło",
+    "dontHaveAccount": "Nie masz konta?",
+    "doYouHaveAccount": "Czy masz konto?",
+    "or": "Lub",
+    "loginWithGoogle": "Zaloguj się za pomocą konta Google",
+
+    
+    "welcomeLine1": "Witamy w",
+    "welcomeLine2": "Grafik Master"
+  }
+}
