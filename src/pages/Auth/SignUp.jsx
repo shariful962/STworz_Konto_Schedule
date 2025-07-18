@@ -6,8 +6,10 @@ import women from "../../assets/women.svg";
 import { Eye, EyeOff } from "lucide-react";
 import { FaUserEdit } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const SignUp = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,34 +37,34 @@ const SignUp = () => {
         <div className="max-w-md  mx-auto mt-16 lg:mt-14 px-4 lg:px-0">
           <form onSubmit={handleSignUP}>
             <h1 className="font-medium text-[2rem] text-textClr text-center">
-              Registration
+              {t("auth.registration")}
             </h1>
 
             {/* name input  */}
             <div>
               <label className="block mb-1 font-Inter font-medium text-textClr">
-                Name{" "}
+                {t("auth.name")} {" "}
               </label>
               <div className="form-control">
                 <input
                   type="text"
-                  placeholder="Enter FUllname"
+                  placeholder={t("auth.placeholder.name")}
                   className=" outline-none flex-1 text-gray-800"
                   onChange={(e) => setName(e.target.value)}
                 />
-                <img src={mail} alt="email-icon" />
+                {/* <img src={mail} alt="email-icon" /> */}
               </div>
             </div>
 
             {/* email input  */}
             <div className="mt-7">
               <label className="block mb-1 font-Inter font-medium text-textClr">
-                Email{" "}
+                {t("auth.email")}{" "}
               </label>
               <div className="form-control">
                 <input
                   type="email"
-                  placeholder="Enter Email"
+                  placeholder={t("auth.placeholder.email")}
                   className=" outline-none flex-1 text-gray-800"
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -73,7 +75,7 @@ const SignUp = () => {
             {/* password input  */}
             <div className="my-9">
               <label className="block mb-1 font-Inter font-medium text-textClr">
-                Password
+                {t("auth.password")}
               </label>
               <div className="form-control">
                 <input
@@ -82,7 +84,7 @@ const SignUp = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   className="bg-transparent outline-none flex-1 text-gray-800"
-                  placeholder="Enter Password"
+                  placeholder={t("auth.placeholder.password")}
                 />
                 <button
                   type="button"
@@ -102,7 +104,7 @@ const SignUp = () => {
 
             <div className="my-9">
               <label className="block mb-1 font-Inter font-medium text-textClr">
-                Password
+                {t("auth.confirmPassword")}
               </label>
               <div className="form-control">
                 <input
@@ -111,7 +113,7 @@ const SignUp = () => {
                   onChange={(e) => setConfirmPass(e.target.value)}
                   required
                   className="bg-transparent outline-none flex-1 text-gray-800"
-                  placeholder="Enter Password"
+                  placeholder={t("auth.placeholder.confirmPassword")}
                 />
                 <button
                   type="button"
@@ -132,26 +134,26 @@ const SignUp = () => {
               type="submit"
               className="signIn_submit"
             >
-              Registration
+              {t("auth.registration")}
             </button>
             {/* sign up link  */}
             <div className="mt-4 text-center text-sm text-gray-600">
-              Do you have an account?{" "}
+             {t("auth.doYouHaveAccount")} {" "}
               <span
                 onClick={() => {
                   navigate("/signin");
                 }}
                 className="text-Primary font-semibold hover:underline cursor-pointer"
               >
-                Sign in
+                {t("auth.signin")}
               </span>
             </div>
           </form>
 
-          <h1 className="text-base text-center my-7">Or</h1>
+          <h1 className="text-base text-center my-7">{t("auth.or")}</h1>
 
           <div className="sign_with_goole">
-            <FcGoogle size={28} /> Registration with google account
+            <FcGoogle size={28} /> {t("auth.loginWithGoogle")}
           </div>
         </div>
       </div>
