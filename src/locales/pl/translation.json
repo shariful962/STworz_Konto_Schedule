@@ -14,11 +14,20 @@
     "or": "Lub",
     "loginWithGoogle": "Zaloguj się za pomocą konta Google",
 
-      "placeholder": {
-        "email": "Wpisz swój e-mail",
-        "password": "Wprowadź hasło",
-        "confirmPassword": "Potwierdź hasło",
-        "name": "Wpisz swoje imię i nazwisko"
+    "placeholder": {
+      "email": "Wpisz swój e-mail",
+      "password": "Wprowadź hasło",
+      "confirmPassword": "Potwierdź hasło",
+      "name": "Wpisz swoje imię i nazwisko"
     }
+  },
+
+  "sidebar": {
+    "home": "Dom",
+    "employees": "Pracownicy",
+    "schedules": "Ustawienie harmonogramu",
+    "chat": "Czat, aby ustawić harmonogram",
+    "premium": "Premia",
+    "logout": "Wyloguj się"
   }
 }

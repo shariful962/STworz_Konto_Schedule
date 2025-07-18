@@ -99,8 +99,10 @@ import { Settings, MessageCircle, Users } from "lucide-react";
 import { FaCamera } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import pp from "../../assets/pp.png";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  const {t} = useTranslation();
   const [selectedNav, setSelectedNav] = useState("Dashboard");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState("John Kabir");
@@ -109,11 +111,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   const fileInputRef = useRef(null);
 
   const menuItems = [
-    { name: "Home", path: "/dashboard", ico: IoHomeOutline },
-    { name: "Employees", path: "/employee", ico: Users },
-    { name: "Schedule Setting", path: "/schedule", ico: Settings },
-    { name: "Chat to Set Schedule", path: "/chat", ico: MessageCircle },
-    { name: "Premium", path: "/premium", ico: MdOutlineWorkspacePremium },
+    {id:"home", name: t("sidebar.home"), path: "/dashboard", ico: IoHomeOutline },
+    {id: "employees", name: t('sidebar.employees'), path: "/employee", ico: Users },
+    {id:"schedules", name: t('sidebar.schedules'), path: "/schedule", ico: Settings },
+    {id:"chat", name: t('sidebar.chat'), path: "/chat", ico: MessageCircle },
+    {id:"premium", name: t('sidebar.premium'), path: "/premium", ico: MdOutlineWorkspacePremium },
   ];
 
   const navigate = useNavigate();
@@ -142,15 +144,15 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
         <div className="flex flex-col gap-3">
           {menuItems.map((e) => {
-            const isSelected = selectedNav === e.name;
-            const isBorderedch = e.name === "Chat to Set Schedule";
-            const isBorderedpm = e.name === "Premium";
+            const isSelected = selectedNav === e.id;
+            const isBorderedch = e.id === "chat";
+            const isBorderedpm = e.id === "premium";
 
             return (
               <div
-                key={e.name}
+                key={e.id}
                 onClick={() => {
-                  setSelectedNav(e.name);
+                  setSelectedNav(e.id);
                   navigate(e.path);
                   if (window.innerWidth < 640) toggleSidebar(); // close only on mobile
                 }}
@@ -181,7 +183,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           onClick={() => navigate("/")}
           className="w-full py-2 border-2 border-Primary text-Primary hover:bg-Primary hover:text-white rounded-lg font-semibold text-lg"
         >
-          Log out
+          {t("auth.logout")}
         </button>
        
        {/* profile section editable modal  */}

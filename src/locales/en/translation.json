@@ -15,12 +15,19 @@
     "loginWithGoogle": "Log in with google account",
 
     "placeholder": {
-        "email": "Enter Your Email",
-        "password": "Enter Password",
-        "confirmPassword": "Confirm Passord",
-        "name": "Enter your fullname"
+      "email": "Enter Your Email",
+      "password": "Enter Password",
+      "confirmPassword": "Confirm Passord",
+      "name": "Enter your fullname"
     }
+  },
 
-    
+  "sidebar": {
+    "home": "Home",
+    "employees": "Employees",
+    "schedules": "Schedule Setting",
+    "chat": "Chat to Set Schedule",
+    "premium": "Premium",
+    "logout": "Log Out"
   }
 }
