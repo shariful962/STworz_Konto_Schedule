@@ -3,6 +3,7 @@
     "login": "Log In",
     "logout": "Log Out",
     "signup": "Sign up",
+    "Signin": "Sign in",
     "registration": "Registration",
     "email": "Email",
     "password": "Password",
@@ -11,8 +12,14 @@
     "doYouHaveAccount": "Do you have an account?",
     "or": "Or",
     "loginWithGoogle": "Log in with google account",
+
+    "placeholder": {
+        "email": "Enter Your Email",
+        "password": "Enter Password",
+        "confirmPassword": "Confirm Passord",
+        "name": "Enter your fullname"
+    }
+
     
-    "welcomeLine1": "Welcome to",
-    "welcomeLine2": "Grafik Master"
   }
 }

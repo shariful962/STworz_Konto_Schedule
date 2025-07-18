@@ -3,6 +3,7 @@
     "login": "Zaloguj się",
     "logout": "Wyloguj się",
     "signup": "Zapisać się",
+    "Signin": "Zaloguj się",
     "registration": "Rejestracja",
     "email": "E-mail",
     "password": "Hasło",
@@ -12,8 +13,11 @@
     "or": "Lub",
     "loginWithGoogle": "Zaloguj się za pomocą konta Google",
 
-    
-    "welcomeLine1": "Witamy w",
-    "welcomeLine2": "Grafik Master"
+      "placeholder": {
+        "email": "Wpisz swój e-mail",
+        "password": "Wprowadź hasło",
+        "confirmPassword": "Potwierdź hasło",
+        "name": "Wpisz swoje imię i nazwisko"
+    }
   }
 }

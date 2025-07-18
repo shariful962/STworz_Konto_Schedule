@@ -57,7 +57,7 @@ const MonthlySch = () => {
     return (
       <div className="w-full flex flex-col gap-10 my-2 capitalize px-5">
         <h2 className="mt-7 md:mt-0 text-2xl md:text-[2rem] font-semibold font-Roboto text-textClr">
-          {t("auth.welcomeLine1")} <br className="hidden md:block" /> Grafik Master
+          Welcome to <br className="hidden md:block" /> Grafik Master
         </h2>
 
         <div className="flex flex-col md:flex-row gap-5 justify-between md:items-center">
