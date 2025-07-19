@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { ChevronDown, Calendar } from "lucide-react";
 import WebIcons from "../../assets/images";
 import Dashboard from "./Dashboard";
@@ -173,7 +173,7 @@ const MonthlySch = () => {
                 setShowDashboard(true);
               }}
               key={index}
-              className=" h-50 border rounded-lg flex items-center justify-center capitalize text-white font-bold text-xl shadow-lg cursor-pointer"
+              className=" h-50 border rounded-lg flex items-center justify-center capitalize text-white font-bold text-xl md:text-2xl shadow-lg cursor-pointer"
               style={{
                 background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${WebIcons.monthBg})`,
                 backgroundSize: "cover",

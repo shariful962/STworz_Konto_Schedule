@@ -926,7 +926,7 @@ const ChatSchedule = () => {
                           <span className="text-sm font-medium text-gray-700">Schedule Preview</span>
                           <button
                             onClick={() => setShowFullTable(true)}
-                            className="text-xs text-blue-600 hover:text-blue-800"
+                            className="text-xs text-blue-600 hover:text-blue-800 cursor-pointer"
                           >
                             View Full Table
                           </button>
