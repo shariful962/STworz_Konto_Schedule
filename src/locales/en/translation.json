@@ -30,20 +30,65 @@
     "premium": "Premium",
     "logout": "Log Out"
   },
+
+  "months": {
+    "January": "January",
+    "February": "February",
+    "March": "March",
+    "April": "April",
+    "May": "May",
+    "June": "June",
+    "July": "July",
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December"
+  },
+
+  "monthlySch": {
+    "welcomeLine1": "Welcome to",
+    "welcomeLine2": "Grafik Master",
+    "monthlySch": "Monthly Generated Schedules"
+  },
+  "manageSch": {
+    "title": "Manage Schedule",
+    "createSchedule": "Create Schedule",
+    "name": "Name",
+    "dateOfSchedule": "Date of Schedule",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "addSchedule": "Add New Schedule",
+    "placeholder": {
+      "name": "Enter your name"
+    }
+  },
+
+  "dashboard": {
+    "manage&createSch": "Manage & Create Schedule",
+    "prevGeneratedSch": "Previously generated schedules",
+    "monthly": "Monthly",
+    "weekly": "Weekly",
+    "edit": "Edit",
+    "save": "Save",
+    "exportPdf": "Export to PDF",
+    "generatingPdf": "Generating PDF..."
+  },
   
-  "month": {
-    "january": "January",
-    "february": "February",
-    "march": "March",
-    "april": "April",
-    "may": "May",
-    "june": "June",
-    "july": "July",
-    "august": "August",
-    "september": "September",
-    "october": "October",
-    "november": "November",
-    "december": "December"
-  }
+  "employee": {
+  "title": "Employee",
+  "addNew": "Add New Employee",
+  "editTitle": "Edit Employee",
+  "addTitle": "Add New Employee",
+  "addPhoto": "Add Photo",
+  "nameLabel": "Employee Name",
+  "emailLabel": "Email",
+  "namePlaceholder": "Enter Employee Name",
+  "emailPlaceholder": "Enter Employee Email",
+  "updateBtn": "Update",
+  "addBtn": "Add",
+  "edit": "Edit",
+  "remove": "Remove"
+}
 
 }

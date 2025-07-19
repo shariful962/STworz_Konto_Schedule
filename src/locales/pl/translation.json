@@ -31,18 +31,65 @@
     "logout": "Wyloguj się"
   },
 
-  "month": {
-    "january": "Styczeń",
-    "february": "Luty",
-    "march": "Marzec",
-    "april": "Kwiecień",
-    "may": "Móc",
-    "june": "Czerwiec",
-    "july": "Lipiec",
-    "august": "Sierpień",
-    "september": "Wrzesień",
-    "october": "Październik",
-    "november": "Listopad",
-    "december": "Grudzień"
-  }
+  "months": {
+    "January": "Styczeń",
+    "February": "Luty",
+    "March": "Marzec",
+    "April": "Kwiecień",
+    "May": "Móc",
+    "June": "Czerwiec",
+    "July": "Lipiec",
+    "August": "Sierpień",
+    "September": "Wrzesień",
+    "October": "Październik",
+    "November": "Listopad",
+    "December": "Grudzień"
+  },
+
+  "monthlySch": {
+    "welcomeLine1": "Witamy w",
+    "welcomeLine2": "Grafik Master",
+    "monthlySch": "Miesięczne wygenerowane grafiki"
+  },
+
+  "manageSch": {
+    "title": "Zarządzaj harmonogramem",
+    "createSchedule": "Utwórz harmonogram",
+    "name": "Imię",
+    "dateOfSchedule": "Data harmonogramu",
+    "startTime": "Godzina rozpoczęcia",
+    "endTime": "Godzina zakończenia",
+    "addSchedule": "Dodaj nowy harmonogram",
+    "placeholder": {
+      "name": "Wpisz swoje imię"
+    }
+  },
+
+  "dashboard": {
+    "manage&createSch": "Zarządzaj i twórz grafik",
+    "prevGeneratedSch": "Poprzednio wygenerowane grafiki",
+    "monthly": "Miesięczny",
+    "weekly": "Tygodniowy",
+    "edit": "Edytuj",
+    "save": "Zapisz",
+    "exportPdf": "Eksportuj do PDF",
+    "generatingPdf": "Generowanie PDF..."
+  },
+
+  "employee": {
+  "title": "Pracownicy",
+  "addNew": "Dodaj nowego pracownika",
+  "editTitle": "Edytuj pracownika",
+  "addTitle": "Dodaj nowego pracownika",
+  "addPhoto": "Dodaj zdjęcie",
+  "nameLabel": "Imię i nazwisko",
+  "emailLabel": "Email",
+  "namePlaceholder": "Wpisz imię pracownika",
+  "emailPlaceholder": "Wpisz email pracownika",
+  "updateBtn": "Aktualizuj",
+  "addBtn": "Dodaj",
+  "edit": "Edytuj",
+  "remove": "Usuń"
+}
+
 }

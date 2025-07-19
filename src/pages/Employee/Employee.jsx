@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { RxCross1 } from "react-icons/rx";
 
 const initialEmp = [
@@ -78,6 +79,7 @@ const initialEmp = [
 ];
 
 const Employee = () => {
+  const {t} = useTranslation();
   const [employees, setEmployees] = useState(initialEmp);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -139,18 +141,18 @@ const Employee = () => {
     <div className="p-4">
       <div className="mt-7 md:mt-0 flex flex-col lg:flex-row justify-between gap-7 lg:items-center mb-6">
         <h2 className="text-3xl md:text-[2rem] font-semibold leading-[22px] text-textClr">
-          Employee
+          {t("employee.title")}
         </h2>
         <div className="text-right mt-1.5">
           <button
-            className="cursor-pointer text-sm w-max md:w-[200px] h-12 p-3 bg-Primary text-white rounded hover:bg-blue-700 transition-all duration-300"
+            className="cursor-pointer text-sm w-max md:w-[200px]  p-3 bg-Primary text-white rounded hover:bg-blue-700 transition-all duration-300"
             onClick={() => {
               setShowModal(true);
               setIsEditing(false);
               setFormData({ name: "", email: "", profileImage: "" });
             }}
           >
-            + Add New Employee
+            + {t("employee.addNew")}
           </button>
         </div>
       </div>
@@ -166,7 +168,7 @@ const Employee = () => {
               <RxCross1 size={16} />
             </button>
             <h3 className="text-Primary text-2xl font-medium text-center mb-4">
-              {isEditing ? "Edit Employee" : "Add New Employee"}
+              {isEditing ? t("employee.editTitle") : t("employee.addTitle")}
             </h3>
 
             {/* Image Placeholder */}
@@ -174,19 +176,19 @@ const Employee = () => {
               <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 text-4xl">
                 {/* image logic could be placed here */}
               </div>
-              <button className="mt-4 cursor-pointer w-[103px] h-7.5 text-sm px-4 py-1 bg-[#8E8E8E] text-white rounded-lg">
-                Add Photo
+              <button className="mt-4 cursor-pointer w-max text-sm px-4 py-1 bg-[#8E8E8E] text-white rounded-lg">
+                {t("employee.addPhoto")}
               </button>
             </div>
 
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block mb-2">Employee Name</label>
+                <label className="block mb-2">{t("employee.nameLabel")}</label>
                 <input
                   type="text"
                   name="name"
-                  placeholder="Enter Employee Name"
+                  placeholder={t("employee.namePlaceholder")}
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full border border-textClr/30 p-2 rounded outline-none bg-Gray"
@@ -194,11 +196,11 @@ const Employee = () => {
                 />
               </div>
               <div>
-                <label className="block mb-2">Email</label>
+                <label className="block mb-2">{t("employee.emailLabel")}</label>
                 <input
                   type="email"
                   name="email"
-                  placeholder="Enter Employee Email"
+                  placeholder={t("employee.emailPlaceholder")}
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full border border-textClr/30 p-2 rounded outline-none bg-Gray"
@@ -210,7 +212,7 @@ const Employee = () => {
                 type="submit"
                 className="cursor-pointer w-full bg-Primary text-white py-2 rounded transition-all hover:bg-blue-700 duration-300"
               >
-                {isEditing ? "Update" : "Add"}
+                {isEditing ? t("employee.updateBtn") : t("employee.addBtn")}
               </button>
             </form>
           </div>
@@ -247,13 +249,13 @@ const Employee = () => {
                 className="cursor-pointer text-sm bg-white px-3 py-1 rounded border border-textClr/20"
                 onClick={() => handleEdit(emp)}
               >
-                Edit
+                {t("employee.edit")}
               </button>
               <button
                 onClick={() => handleRemove(emp.id)}
                 className="cursor-pointer text-sm bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
               >
-                Remove
+                {t("employee.remove")}
               </button>
             </div>
           </div>
