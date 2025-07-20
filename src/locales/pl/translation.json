@@ -90,6 +90,20 @@
   "addBtn": "Dodaj",
   "edit": "Edytuj",
   "remove": "Usuń"
+},
+
+"schedule": {
+  "principles": "Zasady",
+  "searchPlaceholder": "Szukaj zasad...",
+  "addNewRule": "Dodaj nowe zasady",
+  "addNew": "Dodaj",
+  "task": "Zadanie",
+  "title": "Tytuł",
+  "action": "Akcja",
+  "edit": "Edytuj",
+  "delete": "Usuń",
+  "editPrompt": "Edytuj tytuł zasady:",
+  "confirmDelete": "Czy na pewno chcesz usunąć tę zasadę?"
 }
 
 }

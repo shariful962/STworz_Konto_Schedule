@@ -32,11 +32,11 @@ const Premium = () => {
   const subscriptionList = "flex items-center gap-5";
 
   return (
-    <div className="capitalize font-Roboto mt-5">
-      <h1 className="text-[2rem] font-semibold text-textClr">
-        for premium user
+    <div className="capitalize font-Roboto mt-5 px-9">
+      <h1 className="text-[1.75rem] md:text-[2rem] font-semibold text-textClr ml-4 mt-4 md:mt-0">
+        For premium user
       </h1>
-      <div className="m-5 p-10 border border-gray-400 flex flex-col gap-3 items-center justify-center">
+      <div className="m-5 p-4 border border-gray-400 flex flex-col gap-3 items-center justify-center">
         <h1 className="text-2xl sm:text-[2.5rem] font-bold capitalize text-center mb-5">
           subscription plan
         </h1>

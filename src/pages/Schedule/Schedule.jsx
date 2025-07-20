@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Search, MoreVertical } from "lucide-react";
 import WebIcons from "../../assets/images";
+import { useTranslation } from "react-i18next";
 
 const initialData = [
   { id: "FIG-121", title: "The maximum working time in a month is 180 hours" },
@@ -40,6 +41,7 @@ const initialData = [
 ];
 
 const PrinciplesTable = () => {
+  const {t} = useTranslation();
   const [search, setSearch] = useState("");
   const [openActionId, setOpenActionId] = useState(null);
   const [principles, setPrinciples] = useState(initialData);
@@ -83,7 +85,7 @@ const PrinciplesTable = () => {
 
   return (
     <div className="max-w-8xl  p-6 mt-10 bg-white shadow rounded-md font-Roboto ">
-      <h2 className="text-xl font-semibold text-textClr mb-4">Principles</h2>
+      <h2 className="text-xl font-semibold text-textClr mb-4">{t("schedule.principles")}</h2>
 
       <div className="flex items-center justify-between mb-4">
         {/* Search Input with Icon */}
@@ -94,7 +96,7 @@ const PrinciplesTable = () => {
           />
           <input
             type="text"
-            placeholder="Search rules..."
+            placeholder={t("schedule.searchPlaceholder")}
             className="pl-10 pr-3 py-2 border border-gray-300 rounded w-full outline-none"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -106,7 +108,7 @@ const PrinciplesTable = () => {
       <div className="my-6 flex flex-wrap gap-4 justify-end w-full sm:w-auto">
         <input
           type="text"
-          placeholder="Add New Rules"
+          placeholder={t("schedule.addNewRule")}
           className="py-2 px-3 border border-gray-300 rounded w-full sm:w-96 outline-none"
           value={newRule}
           onChange={(e) => setNewRule(e.target.value)}
@@ -118,7 +120,7 @@ const PrinciplesTable = () => {
           <span className="w-5 h-5 border rounded-full flex items-center justify-center text-lg font-bold leading-none">
             +
           </span>
-          Add New
+          {t("schedule.addNew")}
         </button>
       </div>
 
@@ -126,9 +128,9 @@ const PrinciplesTable = () => {
       <table className="w-full table-auto">
         <thead>
           <tr className="text-left  font-medium">
-            <th className="py-2 px-2 w-24 text-[#828282]">Task</th>
-            <th className="py-2 px-2 text-textClr font-medium ">Title</th>
-            <th className="py-2 px-2">Action</th>
+            <th className="py-2 px-2 w-24 text-[#828282]">{t("schedule.task")}</th>
+            <th className="py-2 px-2 text-textClr font-medium ">{t("schedule.title")}</th>
+            <th className="py-2 px-2">{t("schedule.action")}</th>
           </tr>
         </thead>
         <tbody>

@@ -74,7 +74,7 @@
     "exportPdf": "Export to PDF",
     "generatingPdf": "Generating PDF..."
   },
-  
+
   "employee": {
   "title": "Employee",
   "addNew": "Add New Employee",
@@ -89,6 +89,20 @@
   "addBtn": "Add",
   "edit": "Edit",
   "remove": "Remove"
+},
+
+"schedule" : {
+  "principles": "Principles",
+  "searchPlaceholder": "Search rules...",
+  "addNewRule": "Add New Rules",
+  "addNew": "Add New",
+  "task": "Task",
+  "title": "Title",
+  "action": "Action",
+  "edit": "Edit",
+  "delete": "Delete",
+  "editPrompt": "Edit rule title:",
+  "confirmDelete": "Are you sure you want to delete this rule?"
 }
 
 }
