@@ -104,6 +104,24 @@
   "delete": "Usuń",
   "editPrompt": "Edytuj tytuł zasady:",
   "confirmDelete": "Czy na pewno chcesz usunąć tę zasadę?"
+},
+
+"premiumPage": {
+  "title": "Dla użytkowników Premium",
+  "planTitle": "Plan subskrypcji",
+  "planDesc": "Idealny dla osób potrzebujących zaawansowanych funkcji i narzędzi do pracy z klientami.",
+  "priceLabel": "PLN zł",
+  "pricePerMonth": "/ miesiąc",
+  "cancelBtn": "Anuluj teraz",
+  "features": {
+    "feature1": "Administrator może tworzyć dowolną liczbę harmonogramów bez ograniczeń czasowych",
+    "feature2": "Nieograniczony dostęp do harmonogramowania wspomaganego przez AI.",
+    "feature3": "Użytkownicy Premium otrzymują priorytetowe wsparcie techniczne w przypadku problemów i zapytań."
+  }
 }
+
+
+
+
 
 }
