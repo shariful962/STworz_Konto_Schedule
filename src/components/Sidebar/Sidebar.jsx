@@ -122,7 +122,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </div>
 
           <div className="flex flex-col gap-1">
-            <label className="text-sm">Name</label>
+            <label className="text-sm">{t("sidebar.name")}</label>
               <input
               type="text"
               value={name}

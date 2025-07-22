@@ -13,7 +13,6 @@
     "doYouHaveAccount": "Czy masz konto?",
     "or": "Lub",
     "loginWithGoogle": "Zaloguj się za pomocą konta Google",
-
     "placeholder": {
       "email": "Wpisz swój e-mail",
       "password": "Wprowadź hasło",
@@ -21,7 +20,6 @@
       "name": "Wpisz swoje imię i nazwisko"
     }
   },
-
   "sidebar": {
     "home": "Dom",
     "employees": "Pracownicy",
@@ -29,9 +27,9 @@
     "chat": "Czat, aby ustawić harmonogram",
     "premium": "Premia",
     "logout": "Wyloguj się",
-    "save": "Zapisz"
+    "save": "Zapisz",
+    "name": "Nazwa"
   },
-
   "months": {
     "January": "Styczeń",
     "February": "Luty",
@@ -46,13 +44,11 @@
     "November": "Listopad",
     "December": "Grudzień"
   },
-
   "monthlySch": {
     "welcomeLine1": "Witamy w",
     "welcomeLine2": "Grafik Master",
     "monthlySch": "Miesięczne wygenerowane grafiki"
   },
-
   "manageSch": {
     "title": "Zarządzaj harmonogramem",
     "createSchedule": "Utwórz harmonogram",
@@ -65,7 +61,6 @@
       "name": "Wpisz swoje imię"
     }
   },
-
   "dashboard": {
     "manage&createSch": "Zarządzaj i twórz grafik",
     "prevGeneratedSch": "Poprzednio wygenerowane grafiki",
@@ -76,38 +71,35 @@
     "exportPdf": "Eksportuj do PDF",
     "generatingPdf": "Generowanie PDF..."
   },
-
   "employee": {
-  "title": "Pracownicy",
-  "addNew": "Dodaj nowego pracownika",
-  "editTitle": "Edytuj pracownika",
-  "addTitle": "Dodaj nowego pracownika",
-  "addPhoto": "Dodaj zdjęcie",
-  "nameLabel": "Imię i nazwisko",
-  "emailLabel": "Email",
-  "namePlaceholder": "Wpisz imię pracownika",
-  "emailPlaceholder": "Wpisz email pracownika",
-  "updateBtn": "Aktualizuj",
-  "addBtn": "Dodaj",
-  "edit": "Edytuj",
-  "remove": "Usuń"
-},
-
-"schedule": {
-  "principles": "Zasady",
-  "searchPlaceholder": "Szukaj zasad...",
-  "addNewRule": "Dodaj nowe zasady",
-  "addNew": "Dodaj",
-  "task": "Zadanie",
-  "title": "Tytuł",
-  "action": "Akcja",
-  "edit": "Edytuj",
-  "delete": "Usuń",
-  "editPrompt": "Edytuj tytuł zasady:",
-  "confirmDelete": "Czy na pewno chcesz usunąć tę zasadę?"
-},
-
-"premiumPage": {
+    "title": "Pracownicy",
+    "addNew": "Dodaj nowego pracownika",
+    "editTitle": "Edytuj pracownika",
+    "addTitle": "Dodaj nowego pracownika",
+    "addPhoto": "Dodaj zdjęcie",
+    "nameLabel": "Imię i nazwisko",
+    "emailLabel": "Email",
+    "namePlaceholder": "Wpisz imię pracownika",
+    "emailPlaceholder": "Wpisz email pracownika",
+    "updateBtn": "Aktualizuj",
+    "addBtn": "Dodaj",
+    "edit": "Edytuj",
+    "remove": "Usuń"
+  },
+  "schedule": {
+    "principles": "Zasady",
+    "searchPlaceholder": "Szukaj zasad...",
+    "addNewRule": "Dodaj nowe zasady",
+    "addNew": "Dodaj",
+    "task": "Zadanie",
+    "title": "Tytuł",
+    "action": "Akcja",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "editPrompt": "Edytuj tytuł zasady:",
+    "confirmDelete": "Czy na pewno chcesz usunąć tę zasadę?"
+  },
+  "premiumPage": {
     "title": "Dla użytkowników premium",
     "planTitle": "Plan subskrypcji",
     "choosePlan": "Wybierz plan, który Ci odpowiada",
@@ -132,10 +124,17 @@
       "Nieograniczony dostęp do generowania harmonogramów wspomaganego przez AI.",
       "Użytkownicy premium otrzymują priorytetowe wsparcie klienta."
     ]
+  },
+  "chat": {
+    "title": "CzatBot",
+    "selectedEmployee": "Wybrani pracownicy",
+    "messagePlaceholder": "Wpisz swoją wiadomość",
+    "schedulePreview": "Podgląd grafiku",
+    "viewFullTable": "Zobacz pełną tabelę",
+    "fullSch": "Pełny grafik",
+    "save": "Zapisz",
+    "edit": "Edytuj",
+    "generatePDF": "Generuj PDF",
+    "exportPDF": "Eksportuj do PDF"
   }
-
-
-
-
-
 }
