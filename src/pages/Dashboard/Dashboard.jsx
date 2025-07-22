@@ -476,7 +476,7 @@ const Dashboard = ({ setShowDashboard, selectedMonth }) => {
               className="w-[130px] flex items-center border border-blue-500 px-5 py-2 outline-blue-400 gap-2 cursor-pointer hover:bg-blue-50"
             >
               <Calendar className="w-4 h-4" />
-              <p className="capitalize">{monthName}</p>
+              {t(`months.${monthName.charAt(0).toUpperCase() + monthName.slice(1)}`)}
             </button>
             {showMonthName && (
               <div className="absolute z-10 mt-1 w-full bg-white border border-gray-300 shadow-lg">
@@ -491,7 +491,7 @@ const Dashboard = ({ setShowDashboard, selectedMonth }) => {
                   >
                     <Calendar className="w-4 h-4" />
                     <p className="font-medium text-gray-700 capitalize">
-                      {option.value}
+                      {t(`months.${option.value.charAt(0).toUpperCase() + option.value.slice(1)}`)}
                       
                     </p>
                   </button>
@@ -507,7 +507,7 @@ const Dashboard = ({ setShowDashboard, selectedMonth }) => {
               className="flex items-center border border-blue-500 px-5 py-2 outline-blue-400 gap-2 cursor-pointer hover:bg-blue-50"
             >
               <Calendar className="w-4 h-4" />
-              <p>{selected}</p>
+              <p>{t(`dashboard.${selected.toLowerCase()}`)}</p>
             </button>
 
             {open && (
@@ -522,7 +522,7 @@ const Dashboard = ({ setShowDashboard, selectedMonth }) => {
                     className="flex items-center w-full px-3 py-2 hover:bg-gray-100 gap-2 cursor-pointer"
                   >
                     <Calendar className="w-4 h-4" />
-                    <p className="font-medium text-gray-700">{option.value}</p>
+                     {t(`dashboard.${option.value.toLowerCase()}`)}
                   </button>
                 ))}
               </div>
