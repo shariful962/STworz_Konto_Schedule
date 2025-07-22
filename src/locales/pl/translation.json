@@ -28,7 +28,8 @@
     "schedules": "Ustawienie harmonogramu",
     "chat": "Czat, aby ustawić harmonogram",
     "premium": "Premia",
-    "logout": "Wyloguj się"
+    "logout": "Wyloguj się",
+    "save": "Zapisz"
   },
 
   "months": {
@@ -107,18 +108,31 @@
 },
 
 "premiumPage": {
-  "title": "Dla użytkowników Premium",
-  "planTitle": "Plan subskrypcji",
-  "planDesc": "Idealny dla osób potrzebujących zaawansowanych funkcji i narzędzi do pracy z klientami.",
-  "priceLabel": "PLN zł",
-  "pricePerMonth": "/ miesiąc",
-  "cancelBtn": "Anuluj teraz",
-  "features": {
-    "feature1": "Administrator może tworzyć dowolną liczbę harmonogramów bez ograniczeń czasowych",
-    "feature2": "Nieograniczony dostęp do harmonogramowania wspomaganego przez AI.",
-    "feature3": "Użytkownicy Premium otrzymują priorytetowe wsparcie techniczne w przypadku problemów i zapytań."
+    "title": "Dla użytkowników premium",
+    "planTitle": "Plan subskrypcji",
+    "choosePlan": "Wybierz plan, który Ci odpowiada",
+    "payMonthly": "Płatność miesięczna",
+    "payYearly": "Płatność roczna",
+    "free": "Darmowy",
+    "getStarted": "Rozpocznij teraz",
+    "freeDesc": "Idealny dla osób, które potrzebują szybkiego dostępu do podstawowych funkcji.",
+    "freeFeatures": [
+      "Dostęp do harmonogramów generowanych przez AI przez pierwsze 3 dni.",
+      "Możliwość podglądu wygenerowanych harmonogramów",
+      "Po 3 dniach konieczna jest aktualizacja do wersji premium."
+    ],
+    "premium": "Premium",
+    "premiumDesc": "Idealny dla osób, które potrzebują zaawansowanych funkcji i narzędzi do pracy z klientami.",
+    "monthlyPrice": "199 PLN zt",
+    "yearlyPrice": "1499 PLN zt",
+    "perMonth": "/ Miesiąc",
+    "perYear": "/ Rok",
+    "premiumFeatures": [
+      "Administrator może tworzyć dowolną liczbę harmonogramów, bez ograniczeń czasowych",
+      "Nieograniczony dostęp do generowania harmonogramów wspomaganego przez AI.",
+      "Użytkownicy premium otrzymują priorytetowe wsparcie klienta."
+    ]
   }
-}
 
 
 
