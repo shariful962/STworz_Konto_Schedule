@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
   return (
     <div
-      className={`fixed sm:static top-0 left-0 h-full w-[260px] bg-white z-50 shadow-md transform transition-transform duration-300
+      className={`fixed sm:static top-0 left-0 h-full w-auto bg-white z-50 shadow-md transform transition-transform duration-300
       ${isOpen ? "translate-x-0" : "-translate-x-full"} sm:translate-x-0 p-6 flex flex-col justify-between border-r border-textClr/20`}
     >
       {/* Top Section */}
