@@ -80,6 +80,15 @@ const SignIn = () => {
                   )}
                 </button>
               </div>
+              <div className="text-right mt-1">
+                <button
+                  type="button"
+                  onClick={() => navigate("/forgotPassword")}
+                  className="text-Primary text-sm hover:underline"
+                >
+                  {t("auth.forgotPassword")}
+                </button>
+              </div>
             </div>
 
             {/* submition button area  */}
@@ -87,7 +96,7 @@ const SignIn = () => {
             <button
               onClick={loginHandel}
               type="submit"
-              className="signIn_submit"
+              className="mt-2 cursor-pointer text-lg  font-bold font-Inter w-full bg-Primary hover:bg-Primary/90 text-white py-3 rounded-xl transition duration-300 "
             >
               {t("auth.login")}
             </button>

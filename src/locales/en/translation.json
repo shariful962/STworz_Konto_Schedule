@@ -13,11 +13,23 @@
     "doYouHaveAccount": "Do you have an account?",
     "or": "Or",
     "loginWithGoogle": "Log in with google account",
+    "forgotPass": "Forgot password",
+    "forgotPassword": "Forgotten password?",
+    "forgotPassDesc":"Please enter your email to reset the password",
+    "yourEmail":"Your Email",
+    "resetPass": "Reset Password",
+    "setNewPass": "Set a new password",
+    "newPassDesc": "Create a new password. Ensure it differs from previous ones for security",
+    "updatePass" : "Update Password",
+
     "placeholder": {
       "email": "Enter Your Email",
       "password": "Enter Password",
       "confirmPassword": "Confirm Passord",
-      "name": "Enter your fullname"
+      "name": "Enter your fullname",
+      "newPass":"Enter your new password",
+      "reEnter": "Re-enter password"
+
     }
   },
   "sidebar": {

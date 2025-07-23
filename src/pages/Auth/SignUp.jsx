@@ -132,7 +132,7 @@ const SignUp = () => {
             <button
               onClick={registerHandel}
               type="submit"
-              className="signIn_submit"
+              className="submit_btn"
             >
               {t("auth.registration")}
             </button>
