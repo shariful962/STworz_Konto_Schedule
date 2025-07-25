@@ -21,6 +21,12 @@
     "setNewPass": "Set a new password",
     "newPassDesc": "Create a new password. Ensure it differs from previous ones for security",
     "updatePass" : "Update Password",
+    "checkEmail": "Check your email",
+    "checkEmailDescLine1": "We sent a reset link to",
+    "checkEmailDescLine2": "enter 5 digit code that mentioned in the email",
+    "verifyCode": "Verify code",
+    "haventGotEmail": "haven’t got the email yet?",
+    "resentEmail": "Resend email",
 
     "placeholder": {
       "email": "Enter Your Email",
@@ -148,5 +154,13 @@
     "edit": "Edit",
     "generatePDF": "Generating PDF...",
     "exportPDF": " Export to PDF"
+  },
+  "cancel": {
+    "priceLabel": "PLN zt",
+    "pricePerMonth": "/ Month",
+    "btn": "Cancel Now",
+    "list1": "Admin can create as many schedules as needed, with no time restrictions",
+    "list2": "Unlimited access to AI-powered schedule generation.",
+    "list3": "Premium users get priority customer support for issues and inquiries."
   }
 }

@@ -1,8 +1,9 @@
 import React, { useState, useTransition } from "react";
-import logo from "../../assets/logo.svg";
+// import logo from "../../assets/logo.svg";
+import WebIcons from "../../assets/images";
 import { FcGoogle } from "react-icons/fc";
 import mail from "../../assets/icons/auth/mail.svg";
-import women from "../../assets/women.svg";
+// import women from "../../assets/women.svg";
 import { Eye, EyeOff } from "lucide-react";
 import { FaUserEdit } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
@@ -30,7 +31,7 @@ const SignIn = () => {
       <div className="w-full md:w-1/2">
         {/* logo section  */}
         <div className="m-5">
-          <img src={logo} alt="a animate picture" />
+          <img src={WebIcons.logo} alt="a animate picture" className="w-32" />
         </div>
         {/* form section area  */}
         <div className="max-w-md  mx-auto mt-16 lg:mt-44 px-4 lg:px-0">
@@ -123,7 +124,7 @@ const SignIn = () => {
       </div>
       {/* right section  */}
       <div className="bg-Primary w-1/2 hidden md:flex items-center justify-center">
-        <img src={women} alt="A men image " className="hidden md:block" />
+        <img src={WebIcons.authMain} alt="A men image " className="hidden md:block" />
       </div>
     </div>
   );

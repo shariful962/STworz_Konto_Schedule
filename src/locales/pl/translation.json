@@ -21,6 +21,12 @@
     "setNewPass": "Ustaw nowe hasło",
     "newPassDesc": "Utwórz nowe hasło. Upewnij się, że różni się od poprzednich dla bezpieczeństwa",
     "updatePass": "Zaktualizuj hasło",
+    "checkEmail": "Sprawdź swój e-mail",
+    "checkEmailDescLine1": "Wysłaliśmy link resetujący na adres",
+    "checkEmailDescLine2": "wprowadź 5-cyfrowy kod podany w e-mailu",
+    "verifyCode": "Zweryfikuj kod",
+    "haventGotEmail": "Nie otrzymałeś e-maila?",
+    "resentEmail": "Wyślij ponownie",
 
     "placeholder": {
       "email": "Wpisz swój e-mail",
@@ -147,5 +153,13 @@
     "edit": "Edytuj",
     "generatePDF": "Generuj PDF",
     "exportPDF": "Eksportuj do PDF"
-  }
+  },
+  "cancel": {
+  "priceLabel": "PLN zł",
+  "pricePerMonth": "/ Miesiąc",
+  "btn": "Anuluj teraz",
+  "list1": "Administrator może tworzyć dowolną liczbę harmonogramów bez ograniczeń czasowych.",
+  "list2": "Nieograniczony dostęp do generowania harmonogramów wspomaganego przez AI.",
+  "list3": "Użytkownicy Premium otrzymują priorytetowe wsparcie klienta w przypadku problemów i zapytań."
+}
 }
